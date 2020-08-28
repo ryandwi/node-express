@@ -14,9 +14,9 @@ require('dotenv').config()
  */
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(dbConnect)
+// app.use(dbConnect)
 
-/**
+/** 
  * View engine
  */
 app.set('view engine', 'ejs')
@@ -24,8 +24,8 @@ app.set('view engine', 'ejs')
 /**
  * Router
  */
-const blog = require('./routers/blogRouter');
-app.use('/blog', blog);
+const auth = require('./routers/AuthRouter');
+app.use('/auth', auth);
 
 /**
  * Listen App

@@ -1,5 +1,5 @@
 const blogIndex = async (req, res) => {
-    res.render('blogIndex')
+    res.render('auth/loginView')
 }
 
 module.exports = {

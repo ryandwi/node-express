@@ -1,0 +1,41 @@
+<%- include('../includes/header') %> 
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Registrasi</h1>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-4">
+                <form action="/signup" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notelp">No Telp</label>
+                        <input type="text" name="notelp" id="notelp" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password_confirm">Ulangi Password</label>
+                        <input type="password" name="password_confirm" id="password_confirm" class="form-control">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Registrasi</button>
+                </form>
+                <br>
+                <p>Sudah punya akun ? <a href="/auth/login">Login</a></p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<%- include('../includes/footer') %> 
